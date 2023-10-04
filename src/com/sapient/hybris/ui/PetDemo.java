@@ -15,7 +15,7 @@ public class PetDemo {
 		//Array of references of Animal type
 		Animal animal[]= new Animal[3];
 		animal[0]= new Tiger(8);
-		animal[1]=new Dog("steffy","pomeranian",5);
+		animal[1]=new Dog("steffy","pomeranian",5, "Golden");
 		animal[2]= new Cat("puffy", "Orange");
 		
 		System.out.println("Displaying animals...");
@@ -33,9 +33,9 @@ public class PetDemo {
 		//This can hold instances of its implementation classes
 		Pet pet[]= new Pet[4];
 		
-		pet[0]= new Dog("steffy","pomeranian",5);
+		pet[0]= new Dog("steffy","pomeranian",5, "Skin color");
 		pet[1]= new Cat("puffy", "Orange");
-		pet[2]= new Dog("mark","bull dog",10);
+		pet[2]= new Dog("mark","bull dog",10, "Whitish Black");
 		//The following is error since class Tiger is not the implementation class of Pet
 		//pet[3]= new Tiger(12);
 		pet[3]=new Cat("miffy", "White and Black");

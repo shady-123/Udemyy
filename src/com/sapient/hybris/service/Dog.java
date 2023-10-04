@@ -8,17 +8,19 @@ public class Dog extends Animal implements Pet{
 	private String name;
 	private String breed;
 	private Integer age;
+	private String color;
 	
 	public Dog() {
 		
 	}
 
-	public Dog(String name, String breed, Integer age) {
+	public Dog(String name, String breed, Integer age, String color) {
 		super();
 		this.name = name;
 		this.breed = breed;
 		this.age = age;
-	}
+		this.color = color;
+		}
 
 	public String getName() {
 		return name;
@@ -42,6 +44,14 @@ public class Dog extends Animal implements Pet{
 
 	public void setAge(Integer age) {
 		this.age = age;
+	}
+	
+	public String getColor() {
+		return color;
+	}
+
+	public void setColor(String color) {
+		this.color = color;
 	}
 
 	@Override
