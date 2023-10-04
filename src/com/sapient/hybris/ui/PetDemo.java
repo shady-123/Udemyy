@@ -16,7 +16,7 @@ public class PetDemo {
 		Animal animal[]= new Animal[3];
 		animal[0]= new Tiger(8);
 		animal[1]=new Dog("steffy","pomeranian",5);
-		animal[2]= new Cat("puffy");
+		animal[2]= new Cat("puffy", "Orange");
 		
 		System.out.println("Displaying animals...");
 		for(Animal a: animal) {
@@ -34,11 +34,11 @@ public class PetDemo {
 		Pet pet[]= new Pet[4];
 		
 		pet[0]= new Dog("steffy","pomeranian",5);
-		pet[1]= new Cat("puffy");
+		pet[1]= new Cat("puffy", "Orange");
 		pet[2]= new Dog("mark","bull dog",10);
 		//The following is error since class Tiger is not the implementation class of Pet
 		//pet[3]= new Tiger(12);
-		pet[3]=new Cat("miffy");
+		pet[3]=new Cat("miffy", "White and Black");
 		
 		
 		System.out.println("\nDisplaying pets...");

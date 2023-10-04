@@ -23,10 +23,13 @@ public class ShapeDemo {
 		for(Shape s: shapes) {
 			if(s instanceof Circle) {
 				System.out.println("Area of circle: "+ s.computeArea());
+				System.out.println("It is a Circle with Area: " + s.computeArea() + " square cm.");
 			}else if(s instanceof Rectangle) {
 				System.out.println("Area of rectangle: "+ s.computeArea());
+				System.out.println("It is a Rectangle with Area: " + s.computeArea() + " square cm.");
 			}else if( s instanceof Triangle) {
 				System.out.println("Area of traingle: "+ s.computeArea());
+				System.out.println("It is a Triangle with Area: " + s.computeArea() + " square cm.");
 			}
 		}
 

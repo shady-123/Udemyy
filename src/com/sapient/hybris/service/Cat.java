@@ -2,16 +2,17 @@ package com.sapient.hybris.service;
 
 public class Cat extends Animal implements Pet{
 	private String name;
+	private String color;
 
 	public Cat() {
 
 	}
-
-	public Cat(String name) {
-		this.name=name;
+	public Cat(String name, String color) {
+		super();
+		this.name = name;
+		this.color = color;
 	}
-
-	public String getName() {
+	String getName() {
 		return name;
 	}
 
@@ -19,6 +20,13 @@ public class Cat extends Animal implements Pet{
 		this.name = name;
 	}
 
+	public String getColor() {
+		return color;
+	}
+
+	public void setColor(String color) {
+		this.color = color;
+	}
 	@Override
 	public void play() {
 		System.out.println("Playing..");
@@ -39,8 +47,10 @@ public class Cat extends Animal implements Pet{
 
 	@Override
 	public String toString() {
-		return "Cat [name=" + name + "]";
+		return "Cat [name=" + name + "color= " + color + "]";
 	}
+
+	
 	
 	
 }
